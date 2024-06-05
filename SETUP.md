@@ -81,4 +81,4 @@ VITE_GEMINI_API_KEY = <your Gemini API key>
 npm run build
 ```
 
-5. Open Chrome and go to `chrome://extensions`, then hit `Load Unpacked` and choose the newly made `dist` directory.
+5. Open Chrome and go to `chrome://extensions`, turn on `Developer mode`, then hit `Load Unpacked` and choose the newly made `dist` directory.
