@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #f0f7f4;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 550px;
+    height: 550px;
+    overflow: hidden;
+}
+
+#popup-root {
+    width: 550px;
+    height: 550px;
+}
+
+.cshadow {
+    box-shadow:
+        0 4px 8px 0 rgba(0, 0, 0, 0.3),
+        0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cshadow-sm {
+    box-shadow:
+        0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.home-input textarea {
+    border-color: #705d55;
+}
+
+.read-more {
+    box-shadow: 0px -3px 10px #f0f7f4;
+}
+
+.search-input input {
+    border-color: #705d55;
+}
+
+.saveto-modal [role='dialog'] div {
+    max-height: 35rem;
+}
+
+.addtopic-modal [role='dialog'] {
+    width: 15rem;
+}
+
+[data-testid='modal-overlay'] {
+    background-color: rgba(17, 24, 39, 0.3);
+}
+
+.popup-container {
+    background-image: url('../assets/bg-logo.png');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 500px;
+    background-attachment: relative;
+}
+
+textarea {
+    resize: none;
+}
+
+.popup-prompt {
+    animation: mySecond 1s;
+    animation-direction: alternate;
+    z-index: 10;
+}
+
+.home-input button span {
+    padding: 0;
+}
+
+@keyframes mySecond {
+    0% {
+        bottom: 50px;
+        left: 12px;
+    }
+    100% {
+        bottom: 80px;
+        left: 12px;
+    }
+}
