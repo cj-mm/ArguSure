@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f0f7f4;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./assets/bg-logo.png");
+  background-repeat: no-repeat;
+  background-position: 25%;
+  background-size: 50em;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.app-sidebar > div:first-child {
+  background-color: #6eabb0;
+  border-radius: 0%;
+  width: 15rem;
+}
+
+.app-sidebar img {
+  width: 53px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+[data-testid="flowbite-sidebar-items"] {
+  text-align: center;
+}
+
+[data-testid="flowbite-sidebar-item-group"] div {
+  margin-bottom: 50px;
+  font-weight: bold;
+  color: #32292f;
+  background-color: #6eabb0;
+}
+
+[data-testid="flowbite-sidebar-item-group"] div:hover {
+  background-color: #6eabb0;
+  color: #f0f7f4;
+}
+
+.header-profile img {
+  width: 38px;
+  height: 37px;
+  margin: 3px 10px 3px 0px;
+}
+
+.header-profile div {
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: #32292f;
+  background-color: #6eabb0;
+}
+
+.header-profile [data-testid="flowbite-dropdown"] {
+  background-color: #6eabb0;
+  color: #32292f;
+  border-color: #f0f7f480;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-left: -11px;
+}
+
+.header-profile
+  [data-testid="flowbite-dropdown"]
+  [role="menuitem"]
+  button:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.header-profile > button:first-child {
+  width: 100%;
+}
+
+.home-input textarea {
+  border-color: #705d55;
+}
+
+.read-more {
+  box-shadow: 0px -3px 10px #f0f7f4;
+}
+
+.search-input input {
+  border-color: #705d55;
+}
+
+.saveto-modal [role="dialog"] div {
+  max-height: 35rem;
+}
+
+.addtopic-modal [role="dialog"] {
+  width: 15rem;
+}
+
+[data-testid="modal-overlay"] {
+  background-color: rgba(17, 24, 39, 0.1);
+}
+
+.cshadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cshadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.window-popup {
+  background-color: #f0f7f4;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing-page {
+  background-image: url("./assets/bg-logo.png");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-size: 35em;
+  background-attachment: relative;
+}
+
+.table-container td {
+  padding: 10px;
+}
+
+.prompt {
+  animation: myfirst 1s;
+  animation-direction: alternate;
+  z-index: 10;
+}
+
+@keyframes myfirst {
+  0% {
+    bottom: -100px;
+    left: 256px;
+  }
+  100% {
+    bottom: 20px;
+    left: 256px;
+  }
+}
+
+.popup-prompt {
+  animation: mySecond 1s;
+  animation-direction: alternate;
+  z-index: 10;
+}
+
+@keyframes mySecond {
+  0% {
+    bottom: -10px;
+    left: 12px;
+  }
+  100% {
+    bottom: 56px;
+    left: 12px;
+  }
+}
+
+.app-sidebar {
+  animation: myThird 1s;
+  animation-direction: alternate;
+}
+
+@keyframes myThird {
+  0% {
+    left: -240px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.sidebar-menu-close {
+  animation: myFourth 1s;
+  animation-direction: alternate;
+}
+
+@keyframes myFourth {
+  0% {
+    left: -40px;
+  }
+  100% {
+    left: 215px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .counterarg-container {
+    width: 100%;
+  }
+  .page-container {
+    margin-left: 260px;
+  }
+  .page {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .topic-list {
+    width: 100%;
+  }
+  .profile-page {
+    width: 100%;
+  }
+  .table-container {
+    width: 680px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .app-sidebar {
+    display: none;
+  }
+  .sidebar-menu {
+    position: fixed;
+    display: block;
+  }
+  .counterarg-container {
+    width: 100%;
+  }
+  .page-container {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page {
+    width: 100%;
+  }
+  .home-page {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .table-container {
+    width: 100%;
+  }
+
+  .prompt {
+    animation: myfirst 1s;
+    animation-direction: alternate;
+    z-index: 10;
+  }
+
+  @keyframes myfirst {
+    0% {
+      bottom: -100px;
+      left: 12px;
+    }
+    100% {
+      bottom: 20px;
+      left: 12px;
+    }
+  }
+}
