@@ -1,0 +1,7 @@
+# ArguSure: A Gemini-based Chrome Extension for Counterargument Generation
+
+Authors: Carl Joven M. Marasigan and Concepcion L. Khan
+
+Filter bubble tends to cause bias and polarization. To alleviate its negative effects, it is important to utilize resources that offer various points of view. With this in mind, the study developed ArguSure. Powered by Google’s multimodal LLM called Gemini, it is a counterargument generator Chrome extension designed to provide a way for users to conveniently explore counter viewpoints, especially the ones refuting what they see in digital spaces. It also has a web application for user, counterargument, and statistics viewing and management. To test and evaluate the usability of the application and the quality of the counterarguments it generates, the System Usability Scale (SUS) and LLM-based automatic evaluation were used, respectively. With a SUS score of 86.82 obtained from 11 respondents, ArguSure can be classified as an above-average in terms of user experience. Additionally, with mean scores of 4.55 to 4.98 obtained from automatic evaluation, the counterarguments are perceived to be clear, relevant, valid reasoning-wise, logically consistent, and effective overall. The findings also show that, compared to each criterion, the counterarguments are strongest in relevance and weakest in validity of reasoning.
+
+Keywords: filter bubble, Chrome extension, counterargument generation, MERN, Gemini, prompting
